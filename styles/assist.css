@@ -1,0 +1,54 @@
+@font-face {
+    font-family: din;
+    src: url("../fonts/din-2014.otf");
+}
+
+@layer styleguide {
+    :root{
+        --primary-text-color: #ffffff;
+        --secondary-text-color: #52a4d6;
+        
+        --primary-background-color:#082036;
+        --secondary-background-color:#ffffff;
+        --quote-background-color: #12314D;
+        --contact-background-color: #1a4973;
+        --button-color: #52a4d6;
+
+        --h1-font-size-desktop:96px;
+        --h1-font-size-tablet:72px;
+        --h1-font-size-mobile:64px;
+        --h1-letter-spacing:3%;
+        --h1-font-weight:600;
+
+        --h2-font-size-desktop:72px;
+        --h2-font-size-tablet:64px;
+        --h2-font-size-mobile:48px;
+        --h2-letter-spacing:3%;
+        --h2-font-weight:400;
+
+        --h3-font-size-desktop:64px;
+        --h3-font-size-tablet:48px;
+        --h3-font-size-mobile:32px;
+        --h3-letter-spacing:3%;
+        --h3-font-weight:400;
+
+        --p-large-font-size-desktop:32px;
+        --p-large-font-size-tablet:28px;
+        --p-large-font-size-mobile:24px;
+        --p-large-letter-spacing:3%;
+        --p-large-font-weight:300;
+
+        --p-medium-font-size-desktop:28px;
+        --p-medium-font-size-tablet:24px;
+        --p-medium-font-size-mobile:20px;
+        --p-medium-letter-spacing:3%;
+        --p-medium-font-weight:300;
+
+        --h3-font-size-desktop:24px;
+        --h3-font-size-tablet:20px;
+        --h3-font-size-mobile:16px;
+        --h3-letter-spacing:3%;
+        --h3-font-weight:300;
+
+    }
+}
