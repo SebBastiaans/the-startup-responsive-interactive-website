@@ -59,7 +59,7 @@ body{
     font-family: din;
 }
 
-nav{
+header{
     display: flex;
     position: relative;
     height: 5rem;
@@ -68,6 +68,10 @@ nav{
 
     .logo{
         width: 20%;
+    }
+
+    nav{
+        align-content: center;
     }
 }
 .menu-open, .menu-close{
@@ -168,7 +172,7 @@ main{
 
     .implem{
         padding-inline: 3%;
-        
+
     }
 
     .CTA{
