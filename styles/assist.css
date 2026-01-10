@@ -283,11 +283,22 @@ footer{
     div:nth-of-type(2){
         display: flex;
         justify-content: space-between;
+        max-width: 25rem;
 
         a{
             text-decoration: none;
             color: var(--contact-background-color);
             cursor: pointer;
+        }
+    }
+
+    @media(min-width:768px){
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 6rem;
+
+        div:nth-of-type(2){
+            align-items: flex-end;
         }
     }
 
