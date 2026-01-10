@@ -57,6 +57,7 @@ body{
     margin: 0;
     line-height: 1.4;
     font-family: din;
+    letter-spacing: 3%;
 }
 
 header{
@@ -133,14 +134,17 @@ main{
 
 
     .viewer, .configurator, .full-experience{
+        padding-bottom: 2rem;
 
         img{
-            width: 90%;
+            width: 21rem;
+            height: auto;
             margin: 0;
+            aspect-ratio: 1/1;
+            object-fit: cover;
         }
 
         p, details{
-            padding-inline: 3%;
             font-size: var(--p-large-font-size-mobile);
             font-weight: var(--p-large-font-weight);
             margin: 0;
@@ -152,6 +156,7 @@ main{
             margin: 0;
         }
     }
+
 
     .quote{
         background-color: var(--quote-background-color);
@@ -172,6 +177,9 @@ main{
 
         img{
             width: 100%;
+            cursor: zoom-in;
+            transition: transform .5s ease;
+
         }
     }
 
@@ -185,4 +193,3 @@ footer{
     height: fit-content;
 
 }
-
