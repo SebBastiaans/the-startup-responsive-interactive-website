@@ -102,13 +102,19 @@ header{
             ul{
                 padding: 0;
                 height: 100vh;
-                margin-top: 5rem;
+                margin-inline: 5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
 
                 li{
-                    list-style: none;
                     text-align: center;
-                    color: var(--primary-text-color);
+                    list-style: none;
 
+                    a{
+                        text-decoration: none;
+                        color: var(--primary-text-color);
+                    }
                 }
             }
         }
@@ -178,19 +184,61 @@ main{
 
         img{
             width: 100%;
-            cursor: zoom-in;
-            transition: transform .5s ease;
-
         }
     }
 
     .CTA{
         padding-inline: 3%;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+
+        p{
+            margin: 0;
+        }
+        h2{
+            margin-top: 0;
+        }
+
+        a:nth-of-type(2){
+            text-decoration: none;
+            color: var(--button-color);
+            border: var(--button-color) 2px solid;
+            border-radius: 10rem;
+            padding: .75rem 1.5rem .75rem 1.5rem;
+            cursor: pointer;
+        }
     }
+}
+
+.contact-us-btn{
+    background-color: var(--button-color);
+    color: var(--primary-text-color);
+    border: var(--button-color) 2px solid;
+    border-radius: 10rem;
+    text-decoration: none;
+    padding: .75rem 1.5rem .75rem 1.5rem;
+    cursor: pointer;
 }
 
 footer{
     padding-inline: 3%;
     height: fit-content;
+    padding-top: 1rem;
+    color: var(--contact-background-color);
+
+    p{
+        margin: 0;
+    }
+
+    div:nth-of-type(2){
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            color: var(--contact-background-color);
+            cursor: pointer;
+        }
+    }
 
 }
