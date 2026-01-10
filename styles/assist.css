@@ -85,7 +85,7 @@ header{
             padding: 3%;
         }
 
-        .hamburgerMenu{
+        .menu{
             position: fixed;
             top: 0;
             right: 0;
@@ -121,6 +121,43 @@ header{
 
         .hamburgerMenu-open{
             transform: translateX(0);
+        }
+    }
+
+    @media (min-width: 1024px){
+        nav{
+            .menu-open, .menu-close{
+                display: none;
+            }
+
+            .menu{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 80%;
+                height: 5rem;
+                z-index: 1;
+                transform: translateX(0);
+
+                background-color: transparent;
+
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    height: 5rem;
+                    margin: 0;
+                    align-items: center;
+
+                    li{
+                        a{
+                            color: black;
+                        }
+                        .contact-us-btn{
+                            color: var(--primary-text-color);
+                        }
+                    }
+                }
+            }
         }
     }
 
