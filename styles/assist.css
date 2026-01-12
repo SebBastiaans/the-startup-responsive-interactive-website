@@ -70,7 +70,8 @@ header{
     nav{
         align-content: center;
 
-        .menu-open, .menu-close{
+        /* .menu-open, .menu-close */
+        .menu-button {
             background: none;
             border: none;
             cursor: pointer;
@@ -78,12 +79,29 @@ header{
             flex-direction: column;
             padding: 0;
             justify-content: center;
+            z-index: 11;
+            position: relative;
+            path {
+                transition: .2s ease-out;
+                transform-origin: center;
+            }
+            &:has(+ .hamburgerMenu-open) {
+                .lijn-onder, .lijn-boven {
+                    opacity: 0;
+                }
+                .lijn-midden {
+                    rotate: 45deg;
+                }
+                .lijn-midden + .lijn-midden {
+                    rotate: -45deg;
+                }
+            }
         }
-        .menu-close{
+        /* .menu-close{
             position: absolute;
             right: 0;
             padding: 3%;
-        }
+        } */
 
         .menu{
             position: fixed;
@@ -99,10 +117,9 @@ header{
             background-color: #72c1f2;
             color: var(--primary-text-color);
 
-            ul{
+            /* ul{ */
                 padding: 0;
-                height: 50vh;
-                margin-top: 5rem;
+                margin:0;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
@@ -116,17 +133,21 @@ header{
                         color: var(--primary-text-color);
                     }
                 }
-            }
+            /* } */
         }
 
         .hamburgerMenu-open{
             transform: translateX(0);
         }
+
+        
     }
+
+    
 
     @media (min-width: 1024px){
         nav{
-            .menu-open, .menu-close{
+            .menu-button, .menu-close{
                 display: none;
             }
 
@@ -202,6 +223,28 @@ main{
             font-size: var(--h3-font-size-mobile) ;
             font-weight: var(--h3-font-weight);
             margin: 0;
+        }
+
+        p:nth-of-type(2){
+            display: none;
+        }
+
+        ul{
+            display: none;
+        }
+
+        @media(min-width:768px){
+            p:first-of-type{
+                display: none;
+            }
+            details{
+                display: none;
+            }
+
+            ul{
+                display: block;
+
+            }
         }
     }
 
