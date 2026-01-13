@@ -196,6 +196,12 @@ main{
         font-size: var(--h1-font-size-mobile);
         text-align: center;
         margin: 0;
+        @media (min-width:768px){
+            font-size: var(--h1-font-size-tablet);
+        }
+        @media (min-width:1024px){
+            font-size: var(--h1-font-size-desktop);
+        }
     }
 
 
@@ -206,7 +212,7 @@ main{
         grid-template-rows: auto max-content;
 
         img{
-            width: 21rem;
+            width: auto;
             height: auto;
             margin: 0;
             aspect-ratio: 1/1;
@@ -222,6 +228,12 @@ main{
             width: 21rem;
             grid-column-start: 2;
             text-wrap-style: pretty;
+            @media (min-width:768px){
+                font-size: var(--p-large-font-size-tablet);
+            }
+            @media (min-width:1024px){
+                font-size: var(--p-large-font-size-desktop);
+            }
         }
 
         h2{
@@ -230,6 +242,12 @@ main{
             margin: 0;
             padding-inline: 3%;
             grid-column-start: 2;
+            @media (min-width:768px){
+                font-size: var(--h3-font-size-tablet);
+            }
+            @media (min-width:1024px){
+                font-size: var(--h3-font-size-desktop);
+            }
         }
 
         p:nth-of-type(2){
@@ -309,6 +327,12 @@ main{
         font-weight: var(--h2-font-weight);
         padding-inline: 3%;
         margin: 0;
+        @media (min-width:768px){
+            font-size: var(--h2-font-size-tablet);
+        }
+        @media (min-width:1024px){
+            font-size: var(--h2-font-size-desktop);
+        }
 
         em{
             color: var(--secondary-text-color);
@@ -321,10 +345,22 @@ main{
 
         h2{
             font-size: var(--h2-font-size-mobile);
+            @media (min-width:768px){
+                font-size: var(--h2-font-size-tablet);
+            }
+            @media (min-width:1024px){
+                font-size: var(--h2-font-size-desktop);
+            }
         }
 
         p{
             font-size: var(--p-large-font-size-mobile);
+            @media (min-width:768px){
+                font-size: var(--p-large-font-size-tablet);
+            }
+            @media (min-width:1024px){
+                font-size: var(--p-large-font-size-desktop);
+            }
         }
 
         img{
