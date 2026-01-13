@@ -34,13 +34,13 @@
         <h1>270 Degrees</h1>
 
         <section class="viewer">
-            <img src="assets/270degreesDummy.svg" alt="A real time example of the 3D viewer">
+            <div class="js-270viewer" data-270-model="270logo" data-270-width="345px" data-270-height="345px"></div>
             <h2>Viewer</h2>
             <p>Display your product in real-time 3D.</p>
             <details>
                 <summary>Learn more</summary>
                 <p>Our viewer displays your products in 3D. Quick, easy, and affordable. Your product experience will never be the same.</p>
-                <ul> <!--hoezo werkt dit niet?????-->
+                <ul>
                     <li>Easy to implement</li>
                     <li>Works on all enviroments</li>
                     <li>Boost your product experience!</li>
@@ -55,7 +55,7 @@
         </section>
 
         <section class="configurator">
-            <img src="assets/270degreesDummy.svg" alt="An example of a working configurator">
+            <div class="js-270viewer" data-270-model="generic-polo" data-270-width="345px" data-270-height="345px"></div>
             <h2>Configurator</h2>
             <p>Personalize products in real time.</p>
             <details>
@@ -76,7 +76,7 @@
         </section>
 
         <section class="full-experience">
-            <img src="assets/270degreesDummy.svg" alt="An example how we make tailored 3D solutions">
+            <div class="js-270viewer" data-270-model="generic-shoe" data-270-width="345px" data-270-height="345px"></div>
             <h2>Full experience</h2>
             <p>Tailored 3D solutions that stand out.</p>
             <details>
@@ -125,5 +125,9 @@
             <a href="">Disclaimer</a>
         </div>
     </footer>
+    
+    <script>window.TSDAPIKEY = 'rest-of-the-owl';</script>
+<script src="https://api.270degrees.nl/api/script/latest/viewer.js"></script>
+
 </body>
 </html>
