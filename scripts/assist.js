@@ -22,7 +22,6 @@ media.addEventListener('change', (e) => updateNav(e))
 
 function updateNav(e){
     const isHamburger = e.matches
-    console.log(isHamburger)
     if(isHamburger){
         menu.setAttribute('inert', '')
     }
