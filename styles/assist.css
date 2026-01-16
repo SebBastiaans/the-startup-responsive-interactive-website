@@ -462,9 +462,14 @@ main{
             border-radius: 10rem;
             padding: .75rem 1.5rem .75rem 1.5rem;
             cursor: pointer;
+            display: inline-block;
 
             &:hover{
                 background-color: var(--primary-text-color);
+                scale: 1.1;
+            }
+            &:active{
+                scale: 0.9;
             }
         }
     }
@@ -478,10 +483,15 @@ main{
     text-decoration: none;
     padding: .75rem 1.5rem .75rem 1.5rem;
     cursor: pointer;
+    display: inline-block;
 
     &:hover{
         background-color: var(--primary-text-color);
         color: var(--button-color);
+        scale: 1.1;
+    }
+    &:active{
+        scale: .9;
     }
 }
 
