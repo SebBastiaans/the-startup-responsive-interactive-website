@@ -160,6 +160,7 @@ header{
                 a{
                     text-decoration: none;
                     color: var(--primary-text-color);
+                    font-size: var(--p-large-font-size-mobile);
 
                     &:hover{
                         text-decoration: underline;
