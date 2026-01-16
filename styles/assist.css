@@ -170,6 +170,10 @@ header{
                     }
                 }
             }
+
+            #menu-label{
+                color: black;
+            }
         }
 
         .hamburgerMenu-open{
