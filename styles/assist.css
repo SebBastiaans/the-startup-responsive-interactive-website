@@ -167,10 +167,11 @@ header{
                     }
                 }
             }
-
-            #menu-label{
-                color: black;
-            }
+        }
+        
+        #menu-label{
+            color: black;
+            font-size: 16px;
         }
 
         .hamburgerMenu-open{
@@ -284,7 +285,7 @@ main{
             width: 21rem;
             grid-column-start: 2;
             text-wrap-style: pretty;
-            
+
             @media (min-width:768px){
                 font-size: var(--p-large-font-size-tablet);
             }
