@@ -147,11 +147,6 @@ header{
             flex-direction: column;
             justify-content: space-around;
 
-            animation-name: menu-animation;
-            animation-duration: .3s;
-            animation-timing-function: ease-out;
-            animation-delay: .2s;
-
             li{
                 position: relative;
                 text-align: center;
@@ -168,7 +163,7 @@ header{
                 }
             }
         }
-        
+
         #menu-label{
             color: black;
             font-size: 16px;
@@ -177,27 +172,26 @@ header{
         .hamburgerMenu-open{
             transform: translateY(0);
             padding-top: 5rem;
+            
+            @media (prefers-reduced-motion: no-preference) {
+                li {
+                    animation-duration: .5s;
+                    animation-fill-mode: backwards;
+                    animation-delay: calc(sibling-index() * .15s);
+                }
+                li:nth-of-type(odd) {
+                    animation-name:--move-in-from-left;
+                }
 
-            li:nth-of-type(odd) {
-                animation-name:--move-in-from-left;
-                animation-duration: .5s;
+                li:nth-of-type(even) {
+                    animation-name:--move-in-from-right;
+                }
             }
 
-            li:nth-of-type(even) {
-                animation-name:--move-in-from-right;
-                animation-duration: .5s;
-            }
-
-            li {
-                animation-fill-mode: backwards;
-                animation-delay: calc(sibling-index() * .15s);
-            }
         }
 
         
     }
-
-    
 
     @media (min-width: 1024px){
         nav{
