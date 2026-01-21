@@ -454,8 +454,8 @@ main{
 
         a:nth-of-type(2){
             text-decoration: none;
-            color: var(--button-color);
-            border: var(--button-color) 2px solid;
+            color: #72C1F2;
+            border: #72C1F2 2px solid;
             border-radius: 10rem;
             padding: .75rem 1.5rem .75rem 1.5rem;
             cursor: pointer;
