@@ -129,6 +129,26 @@
     
     <script>window.TSDAPIKEY = 'rest-of-the-owl';</script>
 <script src="https://api.270degrees.nl/api/script/latest/viewer.js"></script>
+<button type="button" hidden id="lock-screen">Lock screen</button>
 
+<script>
+let lock;
+let button = document.querySelector('button#lock-screen');
+if ('wakeLock' in navigator) {
+  button.hidden = false;
+  button.addEventListener('click', async function() {
+    if (lock && !lock.released) { return; }
+    try {
+      lock = await navigator.wakeLock.request('screen');
+      document.addEventListener('visibilitychange', async function() {
+        if (lock !== null && document.visibilityState === 'visible') {
+          lock = await navigator.wakeLock.request('screen');
+        }
+      });
+    } catch (err) {}
+    button.hidden = true;
+  });
+}
+</script>
 </body>
 </html>
